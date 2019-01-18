@@ -5,11 +5,10 @@ import { Route, Switch } from 'react-router-dom';
 // CssBase use default css settings by Material UI
 import CssBaseline from '@material-ui/core/CssBaseline'
 import MainComponent from './MainComponent';
-//
 
 class App extends Component {
   render() {
-    
+
     // to check if components refresh when they dont need to
     if (process.env.NODE_ENV !== 'production') {
       const {whyDidYouUpdate} = require('why-did-you-update');

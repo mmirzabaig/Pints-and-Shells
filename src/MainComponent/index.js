@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//
+import BreweryMap from '../BreweryMap';
 
 class MainComponent extends Component {
   constructor(){
@@ -53,7 +53,7 @@ class MainComponent extends Component {
     return (
       <div className="MainComponent">
         <div className="MapContainer">
-          <Map brewData={this.state.locations}/>
+          <BreweryMap brewData={this.state.locations}/>
         </div>
       </div>
     );

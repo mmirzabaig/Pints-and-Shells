@@ -21,7 +21,7 @@ const styles = {
 function DenseAppBar(props) {
   const { classes } = props;
   return (
-    <div className={classes.root}>
+    <div xclassName={classes.root}>
       <AppBar position="relative" style={{ backgroundColor: '#2E6A8A', width: '98%', top: '15px', left: 15}}>
         <Toolbar variant="dense" style={{width: '100%', border: '1px solid white'}}>
         <IconButton className={classes.menuButton} color='white' aria-label="Menu">
@@ -30,10 +30,8 @@ function DenseAppBar(props) {
           <Typography variant="h6" style={{color:'#ECEEF9'}}>
             Pints & Shells
           </Typography>
-
-            <Button color="inherit" style={{left: '84%', marginLeft: '5px'}}>Login</Button>
-            <Button color="inherit" style={{left: '76%'}}>Tour</Button>
-
+          <Button color="inherit" style={{left: '84%', marginLeft: '5px'}}>Login</Button>
+          <Button color="inherit" style={{left: '76%'}}>Tour</Button>
         </Toolbar>
       </AppBar>
     </div>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import BreweryMap from '../BreweryMap';
+import './style.css';
 
 class MainComponent extends Component {
   constructor(){
@@ -52,7 +53,10 @@ class MainComponent extends Component {
 
     return (
       <div className="MainComponent">
-        <div className="MapContainer">
+        <div className='directions'>
+          <h2>This will explain what the website does in 4 steps. Divide this box into 4 parts with white text</h2>
+        </div>
+        <div className="mapContainer">
           <BreweryMap brewData={this.state.locations}/>
         </div>
       </div>

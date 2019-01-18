@@ -27,7 +27,7 @@ function DenseAppBar(props) {
         <IconButton className={classes.menuButton} color='inherit' aria-label="Menu">
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" style={{color:'#ECEEF9'}}>
+          <Typography variant="h6" style={{color:'white'}}>
             Pints & Shells
           </Typography>
           <Button color="inherit" style={{left: '84%', marginLeft: '5px'}}>Login</Button>

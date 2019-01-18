@@ -54,7 +54,18 @@ class MainComponent extends Component {
     return (
       <div className="MainComponent">
         <div className='directions'>
-          <h2>This will explain what the website does in 4 steps. Divide this box into 4 parts with white text</h2>
+          <div className='box'>
+            <h2>Directions 1</h2>
+          </div>
+          <div className='box'>
+              <h2>Directions 2</h2>
+          </div>
+          <div className='box'>
+            <h2>Directions 3</h2>
+          </div>
+          <div className='box'>
+            <h2>Directions 4</h2>
+          </div>
         </div>
         <div className="mapContainer">
           <BreweryMap brewData={this.state.locations}/>

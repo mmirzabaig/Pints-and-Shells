@@ -15,16 +15,14 @@ class GoogleMapsContainer extends Component {
   }
 
   onMarkerClick = (props, marker, e) => {
-
-
     this.setState({
       selectedPlace: props,
       activeMarker: marker,
       showingInfoWindow: true,
       info: props
-
     });
   }
+
   onMapClick = (props) => {
     if (this.state.showingInfoWindow) {
       this.setState({
@@ -108,27 +106,27 @@ class GoogleMapsContainer extends Component {
     }
     return (
       <div>
-      <Map
-        item
-        xs = { 12 }
-        style = { style }
-        google = { this.props.google }
-        onClick = { this.onMapClick }
-        zoom = {11 }
-        initialCenter = {{ lat: 30.3005, lng: -97.7388 }}
-      >
-        {markerLocations}
-        <InfoWindow
-          marker = { this.state.activeMarker }
-          visible = { this.state.showingInfoWindow }
-          onOpen={e => {
-                this.onInfoWindowOpen(this.props, e);
-              }}
+        <Map
+          item
+          xs = { 12 }
+          style = { style }
+          google = { this.props.google }
+          onClick = { this.onMapClick }
+          zoom = {11 }
+          initialCenter = {{ lat: 30.3005, lng: -97.7388 }}
         >
-        <content>
-        </content>
-        </InfoWindow>
-      </Map>
+          {markerLocations}
+          <InfoWindow
+            marker = { this.state.activeMarker }
+            visible = { this.state.showingInfoWindow }
+            onOpen={e => {
+                  this.onInfoWindowOpen(this.props, e);
+                }}
+          >
+          <content>
+          </content>
+          </InfoWindow>
+        </Map>
       </div>
     );
   }
